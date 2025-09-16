@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "setup": "chmod +x scripts/setup.sh && ./scripts/setup.sh",
+    "deploy": "chmod +x scripts/deploy.sh && ./scripts/deploy.sh",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf .next node_modules package-lock.json",
+    "fresh-install": "npm run clean && npm install",
+    "test-build": "npm run build && npm start",
+    "analyze": "ANALYZE=true npm run build",
+    "export": "next build && next export"
+  }
+}
